@@ -1,0 +1,135 @@
+body{
+    background-color: #F6F6F6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-size: 44px;
+    font-weight: 700;
+}
+
+p{
+    font-size: 18px;
+    color: #b1b1b1;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.nav-item-text{
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.nav-link{
+    font-weight: 300;
+    color: #000000 !important;
+}
+
+.active .nav-link{
+    font-weight: 600;
+}
+
+.nav-item-icon{
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.col-description{
+    margin-top: 60px;
+}
+
+.col-selection{
+    margin-top: 48px;
+}
+
+.col-selection i{
+    font-size: 20px;
+}
+
+.thumb-img .box{
+    padding: 2px;
+}
+
+.thumb-img .box.active{
+    border: 2px solid #000000;
+    border-radius: 8px;
+}
+
+.radio-group-color input{
+    display: none;
+}
+
+.radio-group-color label span{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    cursor: pointer;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.radio-group-color label i{
+    color: #ffffff;
+    opacity: 0;
+    transition: all .3s ease;
+    font-size: 12px;
+}
+
+.radio-group-color input{
+    &#color-red + label span {
+        background-color: #EC6B62;
+    }
+  
+    &#color-turquoise + label span {
+        background-color: #81D1C4;
+    }
+  
+    &:checked + label span i{
+        opacity: 1;
+    }
+}
+  
+.radio-group-size input{
+    display: none;
+  }
+  
+.radio-group-size label{
+    width: 46px;
+    height: 46px;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 12px 12px 12px;
+    color: #000000;
+    cursor: pointer;
+    border: 1px solid #b1b1b1;
+    border-radius: 8px;
+  }
+  
+.radio-group-size input:checked + label{
+    border: 2px solid #000000;
+   
+}
+
+.btn-primary{
+    background-color: #000000;
+    border: none;
+    border-radius: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+

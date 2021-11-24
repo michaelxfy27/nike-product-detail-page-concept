@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="libraries/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><img src="assets/logo.svg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item nav-item-text active">
+          <a class="nav-link" href="#">New Releases<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item nav-item-text">
+          <a class="nav-link" href="#">Men</a>
+        </li>
+        <li class="nav-item nav-item-text">
+          <a class="nav-link" href="#">Women</a>
+        </li>
+        <li class="nav-item nav-item-text">
+          <a class="nav-link" href="#">Kids</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item nav-item-icon">
+            <a class="nav-link" href="#"><img src="assets/search.svg" alt=""></a>
+        </li>
+        <li class="nav-item nav-item-icon">
+            <a class="nav-link" href="#"><img src="assets/bag.svg" alt=""></a>
+        </li>
+        <li class="nav-item nav-item-icon">
+          <a class="nav-link" href="#"><img src="assets/user.svg" alt=""></a>
+      </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5 col-md-12 col-sm-12">
+        <div class="main-img text-center">
+          <img src="assets/img1-red.png" alt="" width="440px" class="default-image" id="imgDef">
+        </div>
+        <div class="thumb-img row justify-content-center">
+          <div class="box active mr-2" onclick="changeImage(this)">
+            <img src="assets/img1-red.png" alt="" width="80px" id="img-src-1">
+          </div>
+          <div class="box mr-2" onclick="changeImage(this)">
+            <img src="assets/img2-red.png" alt="" width="80px" id="img-src-2">
+          </div>
+          <div class="box mr-2" onclick="changeImage(this)">
+            <img src="assets/img3-red.png" alt="" width="80px" id="img-src-3">
+          </div>
+          <div class="box mr-2" onclick="changeImage(this)">
+            <img src="assets/img4-red.png" alt="" width="80px" id="img-src-4">
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
+      <div class="col-lg-6">
+        <div class="col-description col-lg-12 col-md-12 col-sm-12">
+          <h1>Nike Zoom Freak 3</h1>
+          <p>Basketball Shoe</p>
+          <h2 class="mt-4">$120.00</h2>
+        </div>
+        <div class="col-selection">
+          <div class="col-lg-8 col-md-10 col-sm-12 d-flex flex-column mb-4">
+            <form>
+              <h3>Colors:</h3>
+              <div class="container mt-3">
+                <div class="row radio-group radio-group-color">
+                  <input type="radio" id="color-red" name="color" value="red" class="red-button" checked>
+                    <label for="color-red">
+                      <span>
+                        <i class="fas fa-check"></i>
+                      </span>
+                    </label>
+                  <input type="radio" id="color-turquoise" name="color" class="turquoise-button" value="turquoise">
+                    <label for="color-turquoise">
+                      <span>
+                        <i class="fas fa-check"></i>
+                      </span>
+                    </label>
+                 </div>
+              </div>
+              <!-- size -->
+              <h3 class="mt-4">Select Size:</h3>
+              <div class="container mt-3">
+                <div class="row radio-group radio-group-size">
+                  <input type="radio" name="size" id="size7" value="7" required>
+                    <label class="size-label mr-2" for="size7">7</label>
+                  <input type="radio" name="size" id="size7.5" value="7.5">
+                    <label class="size-label mr-2" for="size7.5">7.5</label>
+                  <input type="radio" name="size" id="size8" value="8">
+                    <label class="size-label mr-2" for="size8">8</label>
+                  <input type="radio" name="size" id="size8.5" value="8.5">
+                    <label class="size-label mr-2" for="size8.5">8.5</label>
+                  <input type="radio" name="size" id="size9" value="9">
+                    <label class="size-label mr-2" for="size9">9</label>
+                  <input type="radio" name="size" id="size9.5" value="9.5">
+                    <label class="size-label mr-2" for="size9.5">9.5</label>
+                 </div>
+              </div>
+             <button type="submit" class="btn btn-primary btn-block mt-4">Add to Bag</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/abbfcf10b1.js" crossorigin="anonymous"></script>
+  <script src="libraries/jquery/jquery-3.6.0.js"></script>
+  <script src="libraries/bootstrap/js/bootstrap.js"></script>
+  <script src="libraries/retina/retina.min.js"></script>
+  <script src="libraries/xzoom/xzoom.min.js"></script>
+  <script>
+    const thumbImg = document.querySelector(".thumb-img").children;
+    function changeImage(event){
+      document.querySelector(".default-image").src=event.children[0].src
+      for(let i=0; i<thumbImg.length; i++){
+        thumbImg[i].classList.remove("active");
+      }
+      event.classList.add("active");
+    }
+
+    function changeTurquoise(event){
+      document.getElementById('imgDef').src='assets/img1-turquoise.png';
+      document.getElementById('img-src-1').src='assets/img1-turquoise.png';
+
+    }
+
+   
+    $(document).ready(function($){
+      $('.red-button').on({
+        'click': function(){
+          $('#imgDef').attr('src', 'assets/img1-red.png');
+          $('#img-src-1').attr('src', 'assets/img1-red.png');
+          $('#img-src-2').attr('src', 'assets/img2-red.png');
+          $('#img-src-3').attr('src', 'assets/img3-red.png');
+          $('#img-src-4').attr('src', 'assets/img4-red.png');
+        }
+      });
+
+      $('.turquoise-button').on({
+        'click': function(){
+          $('#imgDef').attr('src', 'assets/img1-turquoise.png');
+          $('#img-src-1').attr('src', 'assets/img1-turquoise.png');
+          $('#img-src-2').attr('src', 'assets/img2-turquoise.png');
+          $('#img-src-3').attr('src', 'assets/img3-turquoise.png');
+          $('#img-src-4').attr('src', 'assets/img4-turquoise.png');
+        }
+      });
+    });
+
+</script>
+</body>
+</html>
